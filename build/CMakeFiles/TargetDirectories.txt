@@ -1,0 +1,3 @@
+C:/Users/Carsten/git/vic/advent-of-code/build/CMakeFiles/day1.dir
+C:/Users/Carsten/git/vic/advent-of-code/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Carsten/git/vic/advent-of-code/build/CMakeFiles/ZERO_CHECK.dir
