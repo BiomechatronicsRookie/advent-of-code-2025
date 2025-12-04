@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+#include <fstream>
+#include <string>
 
 class Wheel{
     private:
@@ -6,5 +9,6 @@ class Wheel{
     public:
         Wheel();
         ~Wheel();
-        uint8_t rotate();
+        int rotate();
+        std::ifstream inFile;
 };

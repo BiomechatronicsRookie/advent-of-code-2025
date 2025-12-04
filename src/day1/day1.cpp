@@ -1,9 +1,11 @@
 #include <iostream>
+#include <fstream>
 #include "Wheel.h"
+
+int err;
 
 int main(){
     Wheel w;
-    int err;
-
     err = w.rotate();
+    return err;
 };
