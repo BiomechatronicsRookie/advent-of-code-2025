@@ -9,9 +9,11 @@ Wheel::~Wheel(){};
 
 int Wheel::rotate(int16_t init_pos, int16_t* pwd){
     // Declare variables to store password steps and errors
-    int16_t i = 0;
-    char c[4];
-    bool temp = 0;
+    int i = 4;
+    int16_t temp =0;
+    int16_t move = 0;
+    int data = 0;
+    char c[5] = "0000";
     std::ios_base::iostate err = 0;
 
     // Open the input file
@@ -20,7 +22,10 @@ int Wheel::rotate(int16_t init_pos, int16_t* pwd){
     // Read the file until rdstate returns end of file bit (returns 1)
     while(!this->inFile.rdstate()){
         this->inFile >> c;
-        int16_t val = (c[1] - '0')*10 + (c[2] - '0');
+
+        std::cout << c << std::endl;
+        // If the command is L, rotation is negative, else is positive
+        move = c[0] == 'L' ? ~temp+1 : temp;       
     }
     // If end of file reached return 0 else return 1
     if (this->inFile.rdstate()){
