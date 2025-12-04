@@ -2,5 +2,8 @@
 #include "Wheel.h"
 
 int main(){
-    Wheel wheel;
+    Wheel w;
+    int err;
+
+    err = w.rotate();
 };

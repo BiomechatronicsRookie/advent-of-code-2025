@@ -1,8 +1,13 @@
 #include <iostream>
 #include "Wheel.h"
 
-class Wheel{
-    private:
-
-    public:
+Wheel::Wheel(){
+    std::cout << "ciao"  << std::endl;
 };
+
+Wheel::~Wheel(){
+};
+
+uint8_t Wheel::rotate(){
+    return 0;
+}

@@ -1,13 +1,10 @@
-#ifndef WHEEL_H
-#define WHEEL_H
+#pragma once
 
 class Wheel{
     private:
-    
+
     public:
         Wheel();
-
         ~Wheel();
+        uint8_t rotate();
 };
-
-#endif
