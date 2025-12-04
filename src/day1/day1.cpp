@@ -6,6 +6,8 @@ int err;
 
 int main(){
     Wheel w;
-    err = w.rotate();
+    int16_t init_pos = 50;
+    int16_t pwd = 0;
+    err = w.rotate(init_pos, &pwd);
     return err;
 };

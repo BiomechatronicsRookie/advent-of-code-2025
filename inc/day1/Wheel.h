@@ -9,6 +9,6 @@ class Wheel{
     public:
         Wheel();
         ~Wheel();
-        int rotate();
+        int rotate(int16_t init_pos, int16_t* pwd);
         std::ifstream inFile;
 };
