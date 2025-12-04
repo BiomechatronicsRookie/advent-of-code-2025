@@ -13,7 +13,8 @@ int Wheel::rotate(int16_t init_pos, int16_t* pwd){
     int16_t temp =0;
     int16_t move = 0;
     int data = 0;
-    char c[5] = "0000";
+    std::string c;
+    std::string num = "0000";
     std::ios_base::iostate err = 0;
 
     // Open the input file
@@ -22,7 +23,6 @@ int Wheel::rotate(int16_t init_pos, int16_t* pwd){
     // Read the file until rdstate returns end of file bit (returns 1)
     while(!this->inFile.rdstate()){
         this->inFile >> c;
-
         std::cout << c << std::endl;
         // If the command is L, rotation is negative, else is positive
         move = c[0] == 'L' ? ~temp+1 : temp;       
