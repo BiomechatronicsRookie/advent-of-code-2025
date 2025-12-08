@@ -14,5 +14,4 @@ class Wheel{
         std::ifstream inFile;
 };
 
-void wrap(int* pos, std::vector<int> range){
-};
+void wrap(int* pos, std::vector<int> range);
