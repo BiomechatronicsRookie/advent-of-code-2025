@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
 class Wheel{
     private:
@@ -9,6 +10,9 @@ class Wheel{
     public:
         Wheel();
         ~Wheel();
-        int rotate(int16_t init_pos, int16_t* pwd);
+        int rotate(int init_pos, int* pwd);
         std::ifstream inFile;
+};
+
+void wrap(int* pos, std::vector<int> range){
 };

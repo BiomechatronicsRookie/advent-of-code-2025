@@ -6,8 +6,9 @@ int err;
 
 int main(){
     Wheel w;
-    int16_t init_pos = 50;
-    int16_t pwd = 0;
+    int init_pos = 50;
+    int pwd = 0;
     err = w.rotate(init_pos, &pwd);
+    std::cout << "Password number:" << pwd << std::endl;
     return err;
 };
